@@ -19,7 +19,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: artifacts
-          path: target/release
+          path: target/release/rust_cicd
 
   unit_test:
     needs: build
