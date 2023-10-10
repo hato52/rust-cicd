@@ -10,14 +10,8 @@ fn main() {
 #[cfg(test)]
 mod tests {
     #[test]
-    fn test_sum_1() {
-        assert_eq!(super::sum(2, 3), 5);
-        assert_eq!(super::sum(2, 5), 7);
-    }
-
-    #[test]
-    fn test_sum_2() {
-        assert_eq!(super::sum(1, 10), 11);
-        assert_eq!(super::sum(0, 3), 3);
+    fn test_sum() {
+        assert_eq!(super::sum(1, 9), 10);
+        assert_eq!(super::sum(-2, 5), 3);
     }
 }
