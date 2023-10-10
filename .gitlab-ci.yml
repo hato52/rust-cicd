@@ -1,0 +1,23 @@
+image: rust:latest
+
+stages:
+  - build
+  - test
+
+before_script:
+  - echo "this is test script"
+
+build:
+  stage: build
+  script:
+    - echo "this is build"
+    - cargo build --release
+  artifacts:
+    paths:
+      - target/release/rust_cicd
+
+test:
+  stage: test
+  script:
+    - echo "this is test"
+    - cargo test
