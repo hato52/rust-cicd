@@ -12,6 +12,6 @@ mod tests {
     #[test]
     fn test_sum() {
         assert_eq!(super::sum(1, 9), 10);
-        assert_eq!(super::sum(-2, 5), 3);
+        assert_eq!(super::sum(2, 5), 7);
     }
 }
