@@ -22,7 +22,6 @@ jobs:
           path: target/release/rust_cicd
 
   unit_test:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
